@@ -10,3 +10,9 @@ Recipe REST API with Python, Django &amp; Docker using test driven development (
 2. `docker-compose build` (which build our image using the docker-compose configuration)
 2. `docker-compose run app sh -c "django -admin.py startproject app."`
 
+Run the test
+
+* `docker-compose run --rm app sh -c "python manage.py test && flake8"`
+
+Add migrations (new models)
+* `docker-compose run --rm app sh -c "python manage.py makemigrations core"`

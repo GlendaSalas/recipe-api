@@ -15,4 +15,3 @@ COPY ./app /app
 # security porpuse
 RUN adduser -D user
 USER user
-

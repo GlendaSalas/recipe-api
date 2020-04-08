@@ -16,3 +16,6 @@ Run the test
 
 Add migrations (new models)
 * `docker-compose run --rm app sh -c "python manage.py makemigrations core"`
+
+If not opening in browser
+`docker-machine ip default` - it shows the ip for opening with port 8000
